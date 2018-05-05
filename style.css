@@ -1,0 +1,111 @@
+html, body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  max-width: 1440px;
+  padding: 0;
+  width: 100%;
+}
+ .wrapper {
+  display: grid;
+  grid-template-columns:  repeat(24, [col-start] 1fr);
+  grid-template-rows: repeat(16, 47px);
+ }
+
+
+h2 {
+  color:#ED458B;
+  /*padding-top: 10px;*/
+  text-align: center;
+}
+
+span {
+  color: #E6E7E8;
+}
+
+header {
+  background-color: #404041;
+  font-size: 30px;
+  grid-column: col-start / 25;
+  grid-row: 1 / span 2;
+  height: 90px;
+  /*margin-top: 35px;*/
+}
+
+.lower-container {
+  align-items: center;
+  grid-column: 9 / span 8;
+  grid-row: 3 / span 13;
+  /*margin: auto;*/
+  /*width: 900px;*/
+}
+
+.input-container {
+  background-color: #FFFFFF;
+  
+  }
+
+
+.guess-input {
+  height: 41px;
+  /*margin-top: 30px;*/
+  outline-style: none;
+  text-align: center;
+  width: 400px;
+  margin-left: 35px;
+}
+
+.guess-input::placeholder {
+  text-align: left;
+}
+
+.button-style {
+  background-color: #929497;
+  border-radius: 28px;
+  height: 38px;
+  /*margin-left: 29px;*/
+  margin-top: 20px;
+  outline-style: none;
+  width: 171px;
+}
+
+.button-style:hover {
+  background-color: #EB008B; 
+}
+
+.button-style:disabled {
+  background-color: #D0D2D3;
+}
+
+.guess-btn {
+  margin-left: 68px;
+}
+
+.clear-btn {
+  grid-column: 13 / span 3;
+  grid-row: 5;
+}
+
+.last-guess {
+  color: #404041;
+}
+
+.reset-btn {
+  grid-row: 9;
+  margin-left: 35px;
+  width: 374px;
+}
+
+p {
+  color: #EB008B;
+  font-size: 26px;
+  margin: auto;
+  text-align: center;
+}
+
+.current-guess {
+  font-size: 150px;
+  margin: auto;
+}
+
+
